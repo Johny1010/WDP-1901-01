@@ -17,9 +17,9 @@ $scale-time: 250ms;
 %animation {
   transition: background-color $background-time;
   transition: color $icon_text-time;
-  transition: transform $scale-time;
+  transition: transform $scale-time ease-in;
 
-  &:hover {
+  &:not(.no-hover):hover {
     transform: scale(1.1);
   }
 }

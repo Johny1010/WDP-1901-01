@@ -47,6 +47,7 @@
     }
 
     .more {
+      @extend %animation;
       text-align: center;
       padding-top: 30px;
     }
