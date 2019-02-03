@@ -8,13 +8,13 @@ header {
       padding: 0;
 
       li {
+        @extend %animation;
         display: inline-block;
         line-height: 55px;
 
         a {
           color: #ffffff;
           font-size: 13px;
-          @extend %animation;
 
           &:hover {
             color: $primary;
@@ -131,12 +131,12 @@ header {
         display: flex;
 
         li {
+          @extend %animation;
           list-style: none;
           display: flex;
           align-items: stretch;
 
           a {
-            @extend %animation;
             color: $text-color;
             text-transform: uppercase;
             font-size: 12px;
