@@ -49,15 +49,19 @@
     }
   }
 
-  &.active {
+  &:hover {
+    cursor: pointer;
+
     i {
       background-color: $primary;
       color: #ffffff;
       border-color: $primary;
+      transition: 0.4s;
     }
 
     .content {
       color: $primary;
+      transition: 0.4s;
     }
   }
 }
