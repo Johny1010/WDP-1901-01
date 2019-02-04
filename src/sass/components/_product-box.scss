@@ -88,5 +88,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    .price {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .old-price {
+      padding: 5px;
+      color: $inactive-color;
+      text-decoration: line-through $text-color;
+    }
   }
 }
