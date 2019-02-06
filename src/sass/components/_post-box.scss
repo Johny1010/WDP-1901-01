@@ -33,7 +33,7 @@
     padding: 25px;
 
     h5 {
-      color: $primary;
+      color: #2a2a2a;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
@@ -50,5 +50,17 @@
       text-align: center;
       padding-top: 30px;
     }
+  }
+}
+.post-box:hover,
+.post-info:hover {
+  cursor: pointer;
+
+  h5 {
+    color: $primary;
+  }
+
+  .btn-main {
+    background-color: $primary;
   }
 }
