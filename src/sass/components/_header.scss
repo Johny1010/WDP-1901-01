@@ -8,6 +8,7 @@ header {
       padding: 0;
 
       li {
+        @extend %animation;
         display: inline-block;
         line-height: 55px;
 
@@ -67,6 +68,7 @@ header {
 
     .cart {
       .cart-box {
+        @extend %animation;
         display: inline-block;
         position: relative;
         color: #ffffff;
@@ -129,6 +131,7 @@ header {
         display: flex;
 
         li {
+          @extend %animation;
           list-style: none;
           display: flex;
           align-items: stretch;
