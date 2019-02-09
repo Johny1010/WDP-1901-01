@@ -1,7 +1,7 @@
 .feature-box {
   border: 1px solid #b6b6b6;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
 
   .icon {
     transform: translateY(-50%);
@@ -41,11 +41,13 @@
 
     h5 {
       font-weight: 600;
+      font-size: 20px;
       margin: 0;
     }
 
     p {
-      font-weight: 300;
+      font-weight: 400;
+      font-size: 19px;
     }
   }
 
