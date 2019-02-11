@@ -1,0 +1,44 @@
+.section--brands {
+  min-height: 160px;
+
+  .brands-line {
+    height: 1px;
+    background-color: $color-line;
+  }
+
+  .brands-row {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1140px;
+    padding: 23px 0;
+
+    .arrow-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 92px;
+      cursor: pointer;
+      background-color: #2a2a2a;
+
+      &:hover span {
+        color: #e0a38e;
+      }
+
+      span {
+        width: 6px;
+        height: 11px;
+        color: #fff;
+      }
+    }
+
+    .brands-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 140px;
+      min-height: 92px;
+      border: 1px solid $color-line;
+    }
+  }
+}
