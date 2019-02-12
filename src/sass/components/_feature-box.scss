@@ -2,6 +2,7 @@
   border: 1px solid #b6b6b6;
   text-align: center;
   margin-top: 50px;
+  height: 70%;
 
   .icon {
     transform: translateY(-50%);
@@ -38,6 +39,7 @@
     color: rgb(42, 42, 42);
     margin-top: -0.5rem;
     letter-spacing: 1px;
+    height: 100%;
 
     h5 {
       font-weight: 600;
@@ -48,6 +50,7 @@
     p {
       font-weight: 400;
       font-size: 19px;
+      margin: 0;
     }
   }
 
