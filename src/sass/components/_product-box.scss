@@ -87,15 +87,47 @@
       letter-spacing: 1px;
     }
 
-    .stars {
+    .star-rating {
+      display: flex;
+      justify-content: center;
+
+      &:hover .star {
+        @extend .fas;
+        color: $primary;
+        text-shadow: 0 0 3px $primary;
+      }
+
       a {
+        padding: 0 3px;
+        font-size: 19px;
+        cursor: pointer;
         text-decoration: none;
-        color: rgb(42, 42, 42);
+        color: $primary;
         @extend .far;
         @extend .fa-star;
 
-        &.full {
+        &.full-black,
+        &.black-outline {
+          color: black;
+        }
+
+        &.full-black,
+        &.full-creamy {
           @extend .fas;
+        }
+
+        &.full-creamy {
+          color: $primary;
+        }
+
+        &:active {
+          position: relative;
+          top: 2px;
+        }
+
+        &:hover ~ .star {
+          @extend .far;
+          color: $primary;
         }
       }
     }
@@ -122,13 +154,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     .price {
       display: flex;
       flex-direction: row;
       align-items: center;
     }
-    
+
     .old-price {
       padding: 5px;
       color: $inactive-color;
