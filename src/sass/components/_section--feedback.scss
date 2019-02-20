@@ -1,5 +1,16 @@
 .section--feedback {
   margin: 20px 0;
+  
+  .feedback-dots {
+   
+    .carousel-dots {
+      cursor: pointer;
+    }
+
+    .tns-nav-active .carousel-dots {
+      background-color: $primary;
+    }
+  }
 
   .clients-feedback {
     display: flex;
