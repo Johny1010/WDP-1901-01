@@ -24,3 +24,32 @@ Array.from(starRating).forEach((starGroup, index) => {
     });
   });
 });
+/* Brands slider */
+
+var brandsSlider = tns({
+  container: '.brands-container',
+  slideBy: 'page',
+  autoplay: true,
+  autoplayButtonOutput: false,
+  nav: false,
+  loop: true,
+  speed: 4000,
+  mouseDrag: true,
+  controlsText: false,
+  prevButton: '.fa-angle-left',
+  nextButton: '.fa-angle-right',
+  responsive: {
+    450: {
+      items: 2
+    },
+    640: {
+      items: 3
+    },
+    768: {
+      items: 4
+    },
+    995: {
+      items: 6
+    }
+  }
+});
