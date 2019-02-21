@@ -24,8 +24,8 @@ Array.from(starRating).forEach((starGroup, index) => {
     });
   });
 });
-/* Brands slider */
 
+/* Brands slider */
 var brandsSlider = tns({
   container: '.brands-container',
   slideBy: 'page',
@@ -52,4 +52,19 @@ var brandsSlider = tns({
       items: 6
     }
   }
+});
+
+/* Script to slider feedback */
+var feedbackSlider = tns({
+  container: '.feedback-container',
+  mouseDrag: true,
+  loop: true,
+  items: 1,
+  speed: 4000,
+  autoplay: true,
+  autoplayHoverPause: true,
+  autoplayButtonOutput: false,
+  controls: false,
+  controlsText: false,
+  navContainer: '.feedback-dots'
 });
