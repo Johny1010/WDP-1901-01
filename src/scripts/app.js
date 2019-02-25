@@ -1,12 +1,15 @@
 /* TINY SLIDER - NEW FURNITURE */
-
-const slider = tns({
+var productSlider = tns({
   container: '.my-slider',
   items: 1,
   slideBy: 'page',
-  controls: false,
+  loop: true,
   mouseDrag: true,
   speed: 400,
+  navContainer: '.product-dots',
+  controls: false,
+  controlsText: false,
+  swipeAngle: false,
   responsive: {
     768: {
       items: 2
