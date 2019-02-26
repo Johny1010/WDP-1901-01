@@ -1,4 +1,14 @@
 .hot-deals {
+  .deals-menu {
+    background-color: $form-border-color;
+    padding: 10px 10px;
+
+    h6 {
+      color: #ffffff;
+      margin: 0;
+    }
+  }
+
   .photo {
     position: relative;
     padding: 90% 10px 0 10px;
