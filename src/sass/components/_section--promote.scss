@@ -1,11 +1,12 @@
 .hot-deals {
-  .deals-menu {
+  .hot-deals-label {
     background-color: $form-border-color;
-    padding: 10px 10px;
+    margin: 0;
+    color: #ffffff;
 
-    h6 {
-      color: #ffffff;
-      margin: 0;
+    .hot-deals-header,
+    .dots {
+      border-style: none;
     }
   }
 
