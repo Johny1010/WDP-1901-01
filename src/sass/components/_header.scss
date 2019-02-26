@@ -120,15 +120,18 @@ header {
     }
 
     .menu {
+      display: flex;
       align-self: stretch;
 
       ul {
         margin: 0;
         padding: 0;
+        display: flex;
+        align-items: stretch;
 
         li {
           list-style: none;
-          display: inline-block;
+          display: flex;
           align-items: stretch;
 
           a {
@@ -137,7 +140,7 @@ header {
             font-size: 12px;
             padding: 1rem;
             text-decoration: none;
-            display: inline-block;
+            display: flex;
             align-items: center;
             border-top: 4px solid #ffffff;
             font-weight: 500;
@@ -155,19 +158,6 @@ header {
             }
           }
         }
-      }
-
-      ul ul li {
-        display: block;
-      }
-
-      ul li ul {
-        display: none;
-      }
-
-      li:hover ul {
-        display: block;
-        position: absolute;
       }
     }
 
