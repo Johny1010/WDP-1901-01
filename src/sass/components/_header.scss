@@ -165,10 +165,19 @@ header {
     }
 
     .search-form {
-      border: 1px solid $form-border-color;
+      border: 1px solid $form-border-color-lighter;
       display: inline-flex;
       height: 45px;
       color: $text-color;
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid $form-border-color;
+
+        .category {
+          border-right: 1px solid $form-border-color;
+        }
+      }
 
       .category {
         border-right: 1px solid $form-border-color;
@@ -179,7 +188,7 @@ header {
         i:first-child {
           color: $primary;
           position: absolute;
-          left: 10px;
+          left: 15px;
           z-index: 0;
         }
 
@@ -199,6 +208,10 @@ header {
           font-weight: 450;
           position: relative;
           z-index: 1;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
 
@@ -209,12 +222,12 @@ header {
 
         input {
           border: 0;
-          padding-left: 10px;
+          padding: 0px 45px 0px 10px;
           font-size: 14px;
           outline: none;
 
           &::placeholder {
-            color: $text-color;
+            color: #bcbcbc;
           }
         }
 
@@ -222,6 +235,10 @@ header {
           border: 0;
           background-color: transparent;
           outline: none;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
     }
