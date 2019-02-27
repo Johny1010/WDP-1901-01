@@ -3,10 +3,24 @@
 
   .cover {
     padding: 70% 25px 0 25px;
+
     background: {
-      color: #f4f5f7;
+      color: transparent;
+      repeat: no-repeat;
       size: cover;
       position: center;
+    }
+
+    &-1 {
+      background-image: url("../images/furniture/blog-photo-1.jpeg");
+    }
+
+    &-2 {
+      background-image: url("../images/furniture/blog-photo-2.jpeg");
+    }
+
+    &-3 {
+      background-image: url("../images/furniture/blog-photo-3.jpeg");
     }
 
     .details {
@@ -47,6 +61,7 @@
     }
 
     .more {
+      @extend %animation;
       text-align: center;
       padding-top: 30px;
     }
