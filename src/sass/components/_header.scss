@@ -8,6 +8,7 @@ header {
       padding: 0;
 
       li {
+        @extend %animation;
         display: inline-block;
         line-height: 55px;
 
@@ -67,13 +68,14 @@ header {
 
     .cart {
       .cart-box {
+        @extend %animation;
         display: inline-block;
         position: relative;
         color: #ffffff;
 
         .cart-icon {
           background-color: $primary;
-          width: 55px;
+          width: 90px;
           height: 50px;
           border-radius: 3px;
           display: flex;
@@ -82,12 +84,12 @@ header {
           font-size: 20px;
 
           i {
-            margin-right: 5px;
+            margin-right: 45px;
           }
         }
 
         .cart-counter {
-          width: 28px;
+          min-width: 28px;
           height: 27px;
           border-radius: 14px;
           background-color: $header-bg;
@@ -98,8 +100,9 @@ header {
           color: rgb(224, 227, 237);
           position: absolute;
           top: 50%;
-          right: 0;
+          right: 30%;
           transform: translate(50%, -50%);
+          padding: 3px;
         }
 
         &:hover {
@@ -130,6 +133,7 @@ header {
         align-items: stretch;
 
         li {
+          @extend %animation;
           list-style: none;
           display: flex;
           align-items: stretch;
@@ -162,10 +166,19 @@ header {
     }
 
     .search-form {
-      border: 1px solid $form-border-color;
+      border: 1px solid $form-border-color-lighter;
       display: inline-flex;
       height: 65px;
       color: $text-color;
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid $form-border-color;
+
+        .category {
+          border-right: 1px solid $form-border-color;
+        }
+      }
 
       .category {
         border-right: 1px solid $form-border-color;
@@ -176,7 +189,7 @@ header {
         i:first-child {
           color: $primary;
           position: absolute;
-          left: 10px;
+          left: 15px;
           z-index: 0;
         }
 
@@ -207,7 +220,6 @@ header {
         list-style: none;
         display: inline-block;
         text-decoration: none;
-
         color: $text-color;
         text-transform: uppercase;
         font-size: 12px;
@@ -222,11 +234,23 @@ header {
           background-color: $primary;
           color: #ffffff;
           border-color: $primary;
+
+        input {
+          border: 0;
+          padding: 0px 45px 0px 10px;
+          font-size: 14px;
+          outline: none;
+
+          &::placeholder {
+            color: #bcbcbc;
+          }
+
         }
       }
       ul ul li {
         display: block;
       }
+
 
       ul li ul {
         display: none;
@@ -252,13 +276,17 @@ header {
 
         &::placeholder {
           color: $text-color;
-        }
-      }
 
-      button {
-        border: 0;
-        background-color: transparent;
-        outline: none;
+        button {
+          border: 0;
+          background-color: transparent;
+          outline: none;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+        }
       }
     }
   }
