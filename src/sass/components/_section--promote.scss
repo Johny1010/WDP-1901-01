@@ -1,18 +1,36 @@
 .hot-deals {
+  border: 1px solid #e1e1e1;
+  position: relative;
+
   .hot-deals-label {
     background-color: $form-border-color;
     margin: 0;
     color: #ffffff;
+    padding: 5px 0;
 
-    .hot-deals-header,
+    .hot-deals-header {
+      border-style: none;
+      padding: 2px 0px 0 30px;
+
+      h6 {
+        margin: 0;
+      }
+    }
+
     .dots {
       border-style: none;
+      padding-right: 30px;
+
+      ul {
+        background-color: $form-border-color;
+        transform: translateY(2px);
+      }
     }
   }
 
   .photo {
     position: relative;
-    padding: 90% 10px 0 10px;
+    padding: 89% 10px 0 10px;
 
     background: {
       color: transparent;
@@ -23,8 +41,19 @@
 
     overflow: hidden;
 
+    &:hover > .hot-deals_cart {
+      visibility: visible;
+    }
+
     &-1 {
       background-image: url("../images/furniture/hot-deals-photo1.jpg");
+    }
+
+    .hot-deals_cart {
+      position: absolute;
+      top: 30%;
+      left: 33%;
+      visibility: hidden;
     }
   }
 
@@ -124,7 +153,7 @@
 .indoor-furniture {
   .photo {
     position: relative;
-    padding: 50% 10px 0 10px;
+    padding: 68% 10px 0 10px;
 
     background: {
       color: transparent;
