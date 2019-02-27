@@ -164,7 +164,7 @@ header {
     .search-form {
       border: 1px solid $form-border-color;
       display: inline-flex;
-      height: 45px;
+      height: 65px;
       color: $text-color;
 
       .category {
@@ -189,6 +189,14 @@ header {
     }
 
     .category {
+      ul {
+        list-style: none;
+        align-items: stretch;
+        padding: 0;
+        margin: 0;
+        position: relative;
+      }
+
       li {
         list-style: none;
         display: inline-block;
@@ -199,6 +207,22 @@ header {
         list-style: none;
         display: inline-block;
         text-decoration: none;
+
+        color: $text-color;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 1rem;
+        text-decoration: none;
+        align-items: center;
+        border-top: 4px solid #ffffff;
+        font-weight: 500;
+        letter-spacing: 1px;
+
+        &:hover {
+          background-color: $primary;
+          color: #ffffff;
+          border-color: $primary;
+        }
       }
       ul ul li {
         display: block;
@@ -218,6 +242,7 @@ header {
       display: flex;
       align-items: center;
       position: relative;
+      padding-top: 100px;
 
       input {
         border: 0;
