@@ -8,8 +8,7 @@
 
   .brands-row {
     display: flex;
-    justify-content: space-between;
-    min-width: 1140px;
+    justify-content: center;
     padding: 23px 0;
 
     .arrow-button {
@@ -21,24 +20,44 @@
       cursor: pointer;
       background-color: #2a2a2a;
 
-      &:hover span {
+      &:hover button {
         color: #e0a38e;
       }
 
-      span {
-        width: 6px;
-        height: 11px;
+      button {
+        border: none;
+        background-color: inherit;
+      }
+
+      .arrow-icon {
+        cursor: pointer;
+        width: 30px;
+        height: 92px;
         color: #fff;
       }
     }
 
-    .brands-image {
+    .brands-container {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 140px;
-      min-height: 92px;
-      border: 1px solid $color-line;
+      justify-content: space-between;
+      min-width: 1060px;
+
+      .slider-item {
+        display: flex;
+        justify-content: center;
+        max-width: 1px;
+        margin: auto;
+      }
+
+      .brands-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 140px;
+        max-width: 140px;
+        min-height: 92px;
+        border: 1px solid $color-line;
+      }
     }
   }
 }
