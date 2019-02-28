@@ -1,6 +1,5 @@
 .hot-deals {
   border: 1px solid #e1e1e1;
-  position: relative;
 
   .hot-deals-label {
     background-color: $form-border-color;
@@ -41,7 +40,8 @@
 
     overflow: hidden;
 
-    &:hover > .hot-deals_cart {
+    &:hover .hot-deals_cart,
+    &:hover .counter {
       visibility: visible;
     }
 
@@ -54,6 +54,31 @@
       top: 30%;
       left: 33%;
       visibility: hidden;
+    }
+
+    .counter {
+      display: flex;
+      position: absolute;
+      bottom: 5%;
+      right: 0%;
+      width: 100%;
+      justify-content: space-evenly;
+      visibility: hidden;
+
+      .counter-circle {
+        background-color: $form-border-color;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        opacity: 0.9;
+        color: #ffffff;
+        padding: 15px 20px;
+        text-align: center;
+
+        h3 {
+          margin: 0;
+        }
+      }
     }
   }
 
