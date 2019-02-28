@@ -64,34 +64,48 @@
   <div class="menu-bar">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col">
-          <form action="" class="search-form">
-            <div class="category">
-              <i class="fas fa-list-ul"></i>
-              <select name="" id="">
-                <option value hidden="">Select a category</option>
-                <option value="">Beds</option>
-                <option value="">Chairs</option>
-                <option value="">Tables</option>
-                <option value="">Sofas</option>
-                <option value="">Desks</option>
-              </select>
-              <i class="fas fa-caret-down"></i>
-            </div>
-            <div class="search-field">
-              <input placeholder="Search products..." type="text" />
-              <button><i class="fa fa-search"></i></button>
-            </div>
-          </form>
+        <!--Menu FJ-->
+        <div class="col d-flex">
+          <div class="category p-2 ">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fas fa-list-ul"></i> Select a category
+                  <i class="fas fa-caret-down"></i
+                ></a>
+                <ul>
+                  <li><a href="#">Furniture</a></li>
+                  <li><a href="#">Chair</a></li>
+                  <li><a href="#">Table</a></li>
+                  <li><a href="#">Sofa</a></li>
+                  <li><a href="#">Bedroom</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="search">
+            <form action="" class="search-form">
+              <div class="search-field p-2 ">
+                <input placeholder="Search products..." type="text" />
+                <button><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </div>
         </div>
+
         <div class="col-auto menu">
           <ul>
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Furniture</a></li>
-            <li><a href="#">Chair</a></li>
-            <li><a href="#">Table</a></li>
-            <li><a href="#">Sofa</a></li>
-            <li><a href="#">Bedroom</a></li>
+            <li>
+              <a href="#">Furniture</a>
+              <ul>
+                <li><a href="#">Chair</a></li>
+                <li><a href="#">Table</a></li>
+                <li><a href="#">Sofa</a></li>
+                <li><a href="#">Bedroom</a></li>
+              </ul>
+            </li>
             <li><a href="#">Blog</a></li>
           </ul>
         </div>
