@@ -1,0 +1,60 @@
+.section--feedback {
+  margin: 20px 0;
+
+  .feedback-dots {
+    .carousel-dots {
+      cursor: pointer;
+    }
+
+    .tns-nav-active .carousel-dots {
+      background-color: $primary;
+    }
+  }
+
+  .clients-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .quote {
+      font-size: 24px;
+      margin: 5px 0 30px;
+    }
+
+    .feedback-text {
+      max-width: 940px;
+      font-size: 14px;
+      color: $feedback-text;
+      text-align: center;
+      line-height: 25px;
+    }
+
+    .feedback-clients {
+      display: flex;
+      flex-direction: row;
+      margin: 20px 0;
+
+      img {
+        width: 60px;
+        height: 52px;
+        border-radius: 5px;
+        margin-right: 19px;
+        object-fit: cover;
+      }
+
+      .client-data {
+        text-align: center;
+
+        p {
+          color: $feedback-text;
+          font-family: Poppins;
+          margin: 0;
+        }
+
+        p:first-child {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

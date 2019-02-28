@@ -7,8 +7,10 @@
 
   .cover {
     padding: 70% 25px 0 25px;
+
     background: {
-      color: #f4f5f7;
+      color: transparent;
+      repeat: no-repeat;
       size: cover;
       position: center;
     }

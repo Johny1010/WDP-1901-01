@@ -1,0 +1,10 @@
+.products-menu {
+  margin: 20px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .panel-bar .menu ul li a {
+    margin: 15px;
+    font-size: 22px;
+  }
+}

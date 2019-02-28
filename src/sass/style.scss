@@ -13,11 +13,15 @@
 
 @import "components/button";
 @import "components/feature-box";
+@import "components/deals";
 @import "components/panel-bar";
 @import "components/post-box";
 @import "components/product-box";
 
 @import "components/section--features";
+@import "components/section--products";
+@import "components/section--brands";
+@import "components/section--feedback";
 
 body {
   font-family: "Poppins", sans-serif;
