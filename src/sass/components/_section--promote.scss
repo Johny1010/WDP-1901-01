@@ -183,13 +183,67 @@
     background: {
       color: transparent;
       size: cover;
-      position: center;
+      position: 0% 100%;
       repeat: no-repeat;
     }
 
     overflow: hidden;
 
-    &-1 {
+    .indoor-furniture_label {
+      height: 50%;
+      width: 100%;
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      bottom: 30%;
+      right: 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-weight: 200;
+
+      h1 {
+        font-weight: 200;
+
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .shop-now {
+      position: absolute;
+      bottom: 26%;
+      left: 44%;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #292929;
+      border-radius: 5%;
+      font-weight: 600;
+
+      &:hover {
+        color: #292929;
+        cursor: pointer;
+      }
+    }
+
+    .navigation-buttons {
+      display: flex;
+      position: absolute;
+      bottom: 1px;
+      width: 100%;
+      justify-content: center;
+      right: 0%;
+      text-align: center;
+
+      .nav-left,
+      .nav-right {
+        width: 50%;
+        line-height: 16px;
+      }
+    }
+
+    &-2 {
       background-image: url("../images/furniture/indoor-furniture-photo1.jpg");
     }
   }
