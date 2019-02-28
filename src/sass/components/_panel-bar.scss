@@ -34,6 +34,7 @@
       padding: 0;
       list-style: none;
       li {
+        @extend %animation;
         display: inline-block;
         margin: 0 0.5rem;
         font-weight: 600;
@@ -70,6 +71,7 @@
       transform: translateY(15px);
 
       li {
+        @extend %animation;
         display: inline-block;
         margin-left: 0.5rem;
 
