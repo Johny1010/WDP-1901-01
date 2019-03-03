@@ -1,12 +1,11 @@
-
 /* TINY SLIDER - NEW FURNITURE */
 var productSlider = tns({
-  container: '.my-slider',
+  container: '.product-container',
   items: 1,
   slideBy: 'page',
   loop: true,
   mouseDrag: true,
-  speed: 400,
+  speed: 4000,
   navContainer: '.product-dots',
   controls: false,
   controlsText: false,
