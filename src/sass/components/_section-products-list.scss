@@ -18,8 +18,8 @@
     overflow: hidden;
     align-items: flex-end;
 
-    &-1 {
-      background-image: url("../images/furniture/photo-1.jpeg");
+    &-4 {
+      background-image: url("../images/furniture/photo-4.jpeg");
     }
 
     .sale {
@@ -112,7 +112,7 @@
   .actions {
     padding: 15px 10px 10px 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: left;
   }
 }
