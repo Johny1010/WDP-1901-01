@@ -1,0 +1,118 @@
+.product-box-photo {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  .photo {
+    position: relative;
+    padding: 80% 10px 0 10px;
+
+    background: {
+      color: transparent;
+      size: cover;
+      position: center;
+      repeat: no-repeat;
+    }
+
+    overflow: hidden;
+    align-items: flex-end;
+
+    &-1 {
+      background-image: url("../images/furniture/photo-1.jpeg");
+    }
+
+    .sale {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #292929;
+      border-radius: 50%;
+      color: #ffffff;
+      padding: 30px 15px 5px 15px;
+    }
+  }
+}
+
+.product-box-content {
+  margin-top: 1rem;
+  text-align: left;
+  padding: 20px;
+
+  .product-title {
+    color: $primary;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+
+  .product-price {
+    color: $text-color;
+  }
+
+  .star-rating {
+    display: flex;
+    justify-content: left;
+    margin-top: 1rem;
+
+    &:hover .star {
+      @extend .fas;
+      color: $primary;
+      text-shadow: 0 0 3px $primary;
+    }
+
+    a {
+      padding: 0 3px;
+      font-size: 19px;
+      cursor: pointer;
+      text-decoration: none;
+      color: $primary;
+      @extend .far;
+      @extend .fa-star;
+
+      &.full-black,
+      &.black-outline {
+        color: black;
+      }
+
+      &.full-black,
+      &.full-creamy {
+        @extend .fas;
+      }
+
+      &.full-creamy {
+        color: $primary;
+      }
+
+      &:active {
+        position: relative;
+        top: 2px;
+      }
+
+      &:hover ~ .star {
+        @extend .far;
+        color: $primary;
+      }
+    }
+  }
+
+  .description {
+    margin-top: 1rem;
+    color: $inactive-color;
+    font-size: 12px;
+  }
+
+  .line {
+    color: $color-line;
+    border-bottom: 1px solid;
+    position: relative;
+  }
+
+  .actions {
+    padding: 15px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
