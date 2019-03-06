@@ -130,7 +130,6 @@ header {
         margin: 0;
         padding: 0;
         display: flex;
-        align-items: stretch;
 
         li {
           @extend %animation;
@@ -168,7 +167,7 @@ header {
     .search-form {
       border: 1px solid $form-border-color-lighter;
       display: inline-flex;
-      height: 65px;
+      height: 45px;
       color: $text-color;
 
       &:hover {
@@ -198,42 +197,28 @@ header {
           right: 10px;
           z-index: 0;
         }
-      }
-    }
 
-    .category {
-      ul {
-        list-style: none;
-        align-items: stretch;
-        padding: 0;
-        margin: 0;
-        position: relative;
+        select {
+          -webkit-appearance: none;
+          border: 0;
+          background-color: transparent;
+          outline: none;
+          padding: 5px 30px 5px 45px;
+          font-size: 14px;
+          font-weight: 450;
+          position: relative;
+          z-index: 1;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
 
-      li {
-        list-style: none;
-        display: inline-block;
-        align-items: stretch;
-      }
-
-      a {
-        list-style: none;
-        display: inline-block;
-        text-decoration: none;
-        color: $text-color;
-        text-transform: uppercase;
-        font-size: 12px;
-        padding: 1rem;
-        text-decoration: none;
+      .search-field {
+        display: flex;
         align-items: center;
-        border-top: 4px solid #ffffff;
-        font-weight: 500;
-        letter-spacing: 1px;
-
-        &:hover {
-          background-color: $primary;
-          color: #ffffff;
-          border-color: $primary;
+        position: relative;
 
         input {
           border: 0;
@@ -244,38 +229,7 @@ header {
           &::placeholder {
             color: #bcbcbc;
           }
-
         }
-      }
-      ul ul li {
-        display: block;
-      }
-
-
-      ul li ul {
-        display: none;
-      }
-
-      li:hover ul {
-        display: block;
-        position: absolute;
-      }
-    }
-
-    .search-field {
-      display: flex;
-      align-items: center;
-      position: relative;
-      padding-top: 100px;
-
-      input {
-        border: 0;
-        padding-left: 10px;
-        font-size: 14px;
-        outline: none;
-
-        &::placeholder {
-          color: $text-color;
 
         button {
           border: 0;
@@ -285,7 +239,6 @@ header {
           &:hover {
             cursor: pointer;
           }
-
         }
       }
     }
