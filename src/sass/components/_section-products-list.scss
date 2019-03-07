@@ -42,13 +42,14 @@
 
   .product-title {
     color: $primary;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     letter-spacing: 1px;
   }
 
   .product-price {
     color: $text-color;
+    font-size: 15px;
   }
 
   .star-rating {
@@ -114,5 +115,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: left;
+
+    .btn-main-small {
+      margin-left: 5px;
+    }
   }
 }
