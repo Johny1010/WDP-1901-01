@@ -119,16 +119,13 @@ header {
     background-color: #ffffff;
 
     .container > .row {
-      @media (max-width: 768px) {
+      @media (max-width: 1199px) {
         height: 150px;
       }
       height: 84px;
     }
 
     .menu {
-      @media (max-width: 768px) {
-        padding-bottom: 10px;
-      }
       display: flex;
       align-self: stretch;
 
