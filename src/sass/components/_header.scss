@@ -119,14 +119,51 @@ header {
     background-color: #ffffff;
 
     .container > .row {
+      @media (max-width: 1199px) {
+        height: 150px;
+      }
       height: 84px;
+    }
+
+    .menu.menu-active {
+      @media (max-width: 575px) {
+        & ul {
+          display: flex;
+          position: absolute;
+          background-color: $light-color;
+          z-index: 1;
+          left: 5px;
+          top: 65px;
+
+          li,
+          a {
+            width: 150px;
+          }
+        }
+      }
     }
 
     .menu {
       display: flex;
       align-self: stretch;
 
+      .menu-button {
+        @media (max-width: 575px) {
+          height: 50%;
+          display: flex;
+
+          .fa-bars {
+            font-size: 40px;
+            color: $form-border-color;
+          }
+        }
+        display: none;
+      }
+
       ul {
+        @media (max-width: 575px) {
+          display: none;
+        }
         margin: 0;
         padding: 0;
         display: flex;
@@ -235,22 +272,21 @@ header {
           color: #ffffff;
           border-color: $primary;
 
-        input {
-          border: 0;
-          padding: 0px 45px 0px 10px;
-          font-size: 14px;
-          outline: none;
+          input {
+            border: 0;
+            padding: 0px 45px 0px 10px;
+            font-size: 14px;
+            outline: none;
 
-          &::placeholder {
-            color: #bcbcbc;
+            &::placeholder {
+              color: #bcbcbc;
+            }
           }
-
         }
       }
       ul ul li {
         display: block;
       }
-
 
       ul li ul {
         display: none;
@@ -277,15 +313,15 @@ header {
         &::placeholder {
           color: $text-color;
 
-        button {
-          border: 0;
-          background-color: transparent;
-          outline: none;
+          button {
+            border: 0;
+            background-color: transparent;
+            outline: none;
 
-          &:hover {
-            cursor: pointer;
+            &:hover {
+              cursor: pointer;
+            }
           }
-
         }
       }
     }

@@ -1,3 +1,13 @@
+/* Dropdown Menu */
+function dropdownMenu() {
+  document.getElementById('rwd-menu').classList.toggle('menu-active');
+}
+
+document.getElementById('dropdown').addEventListener('click', function(e) {
+  e.preventDefault();
+  dropdownMenu();
+});
+
 /* TINY SLIDER - NEW FURNITURE */
 var productSlider = tns({
   container: '.product-container',
