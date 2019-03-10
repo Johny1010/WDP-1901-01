@@ -125,11 +125,45 @@ header {
       height: 84px;
     }
 
+    .menu.menu-active {
+      @media (max-width: 575px) {
+        & ul {
+          display: flex;
+          position: absolute;
+          background-color: $light-color;
+          z-index: 1;
+          left: 5px;
+          top: 65px;
+
+          li,
+          a {
+            width: 150px;
+          }
+        }
+      }
+    }
+
     .menu {
       display: flex;
       align-self: stretch;
 
+      .menu-button {
+        @media (max-width: 575px) {
+          height: 50%;
+          display: flex;
+
+          .fa-bars {
+            font-size: 40px;
+            color: $form-border-color;
+          }
+        }
+        display: none;
+      }
+
       ul {
+        @media (max-width: 575px) {
+          display: none;
+        }
         margin: 0;
         padding: 0;
         display: flex;
