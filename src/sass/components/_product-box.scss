@@ -1,3 +1,18 @@
+.panel-bar {
+  ul {
+    left: 400px;
+  }
+
+  .nav-tabs {
+    position: relative;
+    left: 150px;
+    width: 500px;
+  }
+  .nav-link {
+    border: none;
+  }
+}
+
 .product-box {
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
