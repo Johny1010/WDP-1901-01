@@ -8,8 +8,7 @@
               <div class="col-auto heading">
                 <h3 class="hotdeals">HOT DEALS</h3>
               </div>
-              <div class="col mycarouselhead"></div>
-              <div class="col-auto dots mycarouselhead">
+              <div class="col-auto dots">
                 <ul class="carousel-indicators">
                   <li data-target="#myCarousel" data-slide-to="0" class="active">
                     <a></a>
@@ -24,9 +23,14 @@
             <div class="carousel-item active">
               <div class="product-box">
                 <div class="photo photo-1">
-                  <div class="sale">sale</div>
-                  <div class="buttons">
-                    <a href="#" class="btn-main-small">Quick View</a>
+                  <div class="circles">
+                    <div class="circle-inner">25 DAYS</div>
+                    <div class="circle-inner">10 HRS</div>
+                    <div class="circle-inner">45 MINS</div>
+                    <div class="circle-inner">30 SECS</div>
+                  </div>
+
+                  <div class="button buttons">
                     <a href="#" class="btn-main-small"
                       ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
                     >
@@ -46,6 +50,7 @@
                 <div class="actions">
                   <div class="outlines">
                     <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                    <a href="#" class="btn-outline"><i class="far fa-eye"></i></a>
                     <a href="#" class="btn-outline"
                       ><i class="fas fa-exchange-alt"></i
                     ></a>
@@ -59,9 +64,13 @@
             <div class="carousel-item">
               <div class="product-box">
                 <div class="photo photo-2">
-                  <div class="sale">sale</div>
-                  <div class="buttons">
-                    <a href="#" class="btn-main-small">Quick View</a>
+                  <div class="circles">
+                    <div class="circle-inner">25 DAYS</div>
+                    <div class="circle-inner">10 HRS</div>
+                    <div class="circle-inner">45 MINS</div>
+                    <div class="circle-inner">30 SECS</div>
+                  </div>
+                  <div class="button buttons">
                     <a href="#" class="btn-main-small"
                       ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
                     >
@@ -83,6 +92,7 @@
                     <a href="#" class="btn-outline active"
                       ><i class="far fa-heart"></i
                     ></a>
+                    <a href="#" class="btn-outline"><i class="far fa-eye"></i></a>
                     <a href="#" class="btn-outline"
                       ><i class="fas fa-exchange-alt"></i
                     ></a>
@@ -96,11 +106,15 @@
             <div class="carousel-item">
               <div class="product-box">
                 <div class="photo photo-8">
-                  <div class="sale">sale</div>
-                  <div class="buttons">
-                    <a href="#" class="btn-main-small">Quick View</a>
-                    <a href="#" class="btn-main-small"
-                      ><i class="fa fa-shopping-basket"></i> ADD TO CART</a
+                  <div class="circles">
+                    <div class="circle-inner">25 DAYS</div>
+                    <div class="circle-inner">10 HRS</div>
+                    <div class="circle-inner">45 MINS</div>
+                    <div class="circle-inner">30 SECS</div>
+                  </div>
+                  <div class="button buttons">
+                    <a href="#" class="btn-main-small addtocart"
+                      ><i class="fa fa-shopping-basket "></i> ADD TO CART</a
                     >
                   </div>
                 </div>
@@ -118,6 +132,7 @@
                 <div class="actions">
                   <div class="outlines">
                     <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                    <a href="#" class="btn-outline"><i class="far fa-eye"></i></a>
                     <a href="#" class="btn-outline"
                       ><i class="fas fa-exchange-alt"></i
                     ></a>
@@ -133,21 +148,39 @@
         </div>
       </div>
       <div class="col-8 col-sm-8 col-ls-8 col-xl-8">
-        <div id="myCarouselright" class="carousel slide" data-ride="carousel">
+        <div
+          id="myCarouselright"
+          class="carousel slide"
+          data-interval="false"
+          data-ride="carousel"
+        >
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img
-                class="carouselimage"
-                src="https://cdn.pixabay.com/photo/2015/02/09/14/56/table-629772_960_720.jpg"
-                alt="First slide"
-              />
+              <div class="carouselphoto">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/02/09/14/56/table-629772_960_720.jpg"
+                  alt="First slide"
+                />
+                <div class="imageoverlay">
+                  <div class="promotext">
+                    <span class="title-light-1"> indoor</span>
+                    <span class="title-normal">furniture</span>
+                    <br />
+                    <span class="title-light-2">save up to 50% of all furniture</span>
+                  </div>
+                  <div class="shopnow">
+                    <button class="btn">Shop now</button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="carousel-item ">
-              <img
-                class="carouselimage"
-                src="https://cdn.pixabay.com/photo/2015/03/26/09/48/doorway-690338_960_720.jpg"
-                alt="Second slide"
-              />
+              <div class="carouselphoto">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/03/26/09/48/doorway-690338_960_720.jpg"
+                  alt="Second slide"
+                />
+              </div>
             </div>
           </div>
           <!--Strzałki-->
