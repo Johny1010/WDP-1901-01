@@ -1,5 +1,9 @@
 /* Tabbed Carousel*/
-#Gallery .photo {
+#Gallery {
+  height: 700px;
+}
+
+.photo {
   position: relative;
 }
 
@@ -37,8 +41,6 @@
     color: white;
   }
 }
-
-.actions-vert,
 .outlines-vert {
   bottom: 600px;
 }
