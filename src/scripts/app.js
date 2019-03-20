@@ -1,3 +1,8 @@
+/* Tooltip - Gallery*/
+$(document).ready(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
 /* Star rating system */
 const fullCreamyStar = 'full-creamy';
 const fullBlackStar = 'full-black';

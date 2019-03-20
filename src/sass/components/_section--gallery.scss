@@ -1,3 +1,76 @@
+/* Tabbed Carousel*/
+#Gallery .photo {
+  position: relative;
+}
+
+.content-gallery {
+  background-color: white;
+  width: 240px;
+  height: 100px;
+  bottom: 120px;
+  left: 295px;
+  position: relative;
+
+  .triangle-top {
+    width: 0;
+    height: 0;
+    border-top: 20px solid #2a2a2a;
+    border-right: 20px solid transparent;
+    margin: 15px auto 0;
+    bottom: 86px;
+    right: 110px;
+    position: relative;
+  }
+
+  .triangle-bottom {
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #2a2a2a;
+    border-left: 20px solid transparent;
+    margin: 15px auto 0;
+    left: 110px;
+    bottom: 40px;
+    position: relative;
+  }
+  .tooltip {
+    background-color: #2a2a2a;
+    color: white;
+  }
+}
+
+.actions-vert,
+.outlines-vert {
+  bottom: 600px;
+}
+
+.circles {
+  position: relative;
+  display: inline-block;
+  padding-left: 10px;
+  bottom: 110px;
+  left: 350px;
+  z-index: 1;
+
+  .circle-inner {
+    width: 100px;
+    height: 100px;
+    background-color: #2a2a2a;
+    border-radius: 100%;
+    display: inline-block;
+    line-height: 100%;
+    position: relative;
+    padding: 20px 20px 0 20px;
+    opacity: 0.6;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+}
+
+/*Right img*/
+
 .justphoto {
   background-image: url("https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_960_720.jpg");
   background: {
@@ -9,11 +82,13 @@
   display: inline-block;
   align-items: flex-end;
   z-index: -1;
+  width: 532px;
+  height: 700px;
 }
 
 .additive {
   position: absolute;
-  bottom: 350px;
+  bottom: 500px;
   padding: 50px;
 
   .phototext {
