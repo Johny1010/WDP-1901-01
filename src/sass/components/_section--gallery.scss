@@ -126,10 +126,13 @@
   }
 
   #Gallery .carousel-indicators {
-    position: static;
     left: initial;
     width: initial;
     margin-left: initial;
+  }
+
+  .carousel-indicators {
+    display: inline-block;
   }
   .img-fluid {
     height: 100px;
