@@ -79,17 +79,15 @@
     vertical-align: middle;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
-    
 
-      .price {
-        font-size:20px;
-      }
-      .price2 {
-        font-size: 18px;
-      }
+    .price {
+      font-size: 20px;
+    }
+    .price2 {
+      font-size: 18px;
+    }
   }
 
-  
   photo-1 {
     background-image: url("../images/furniture/photo-1.jpeg");
   }
@@ -121,103 +119,107 @@
   photo-8 {
     background-image: url("../images/furniture/photo-8.jpeg");
   }
-/*Galllery Sl*/
-#Gallery .list-inline {
-    white-space:nowrap;
-    overflow-x:auto;
-}
+  /*Galllery Sl*/
+  #Gallery .list-inline {
+    white-space: nowrap;
+    overflow-x: auto;
+  }
 
-#Gallery .carousel-indicators {
+  #Gallery .carousel-indicators {
     position: static;
     left: initial;
     width: initial;
     margin-left: initial;
-}
-
-#Gallery .carousel-indicators > li {
+  }
+  .img-fluid {
+    height: 100px;
+    width: 100px;
+  }
+  #Gallery .carousel-indicators > li {
     width: initial;
     height: initial;
     text-indent: initial;
-}
-
-#Gallery .carousel-indicators > li.active img {
-    opacity: 0.7;
-}
-
-/*Right img*/
-
-.justphoto {
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_960_720.jpg");
-  background: {
-    color: transparent;
-    position: center;
-    repeat: no-repeat;
   }
-  position: relative;
-  display: inline-block;
-  align-items: flex-end;
-  z-index: -1;
-  width: 532px;
-  height: 700px;
-}
 
-.additive {
-  position: absolute;
-  bottom: 500px;
-  padding: 50px;
+  #Gallery .carousel-indicators > li.active img {
+    opacity: 0.7;
+  }
 
-  .phototext {
+  /*Right img*/
+
+  .justphoto {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_960_720.jpg");
+    background: {
+      color: transparent;
+      position: center;
+      repeat: no-repeat;
+    }
     position: relative;
     display: inline-block;
+    align-items: flex-end;
+    z-index: -1;
+    width: 532px;
+    height: 700px;
+  }
 
-    .title-black {
-      font-weight: 300;
-      font-size: 1rem;
-      line-height: 1.2;
-      letter-spacing: 5px;
-      text-align: left;
-      margin-bottom: 3px;
-      text-transform: uppercase;
-      color: black;
-    }
-    .title-green {
-      font-weight: 600;
-      margin-bottom: 0;
-      font-size: 3rem;
-      line-height: 1.2;
-      color: #66db4e;
-    }
-    .title-orange {
-      font-weight: 600;
-      margin-bottom: 0;
-      font-size: 3rem;
-      line-height: 1.2;
-      color: $primary;
+  .additive {
+    position: absolute;
+    bottom: 500px;
+    padding: 50px;
+
+    .phototext {
+      position: relative;
+      display: inline-block;
+
+      .title-black {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.2;
+        letter-spacing: 5px;
+        text-align: left;
+        margin-bottom: 3px;
+        text-transform: uppercase;
+        color: black;
+      }
+      .title-green {
+        font-weight: 600;
+        margin-bottom: 0;
+        font-size: 3rem;
+        line-height: 1.2;
+        color: #66db4e;
+      }
+      .title-orange {
+        font-weight: 600;
+        margin-bottom: 0;
+        font-size: 3rem;
+        line-height: 1.2;
+        color: $primary;
+      }
     }
   }
-}
 
-.greenbutton {
-  padding-left: 70px;
-  padding-top: 50px;
+  .greenbutton {
+    padding-left: 70px;
+    padding-top: 50px;
 
-  .btngreen {
-    position: relative;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #66db4e;
-    color: white;
-    font-size: 16px;
-    padding: 16px 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    opacity: 1;
-
-    &:hover {
-      background-color: $primary;
+    .btngreen {
+      position: relative;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #66db4e;
       color: white;
+      font-size: 16px;
+      padding: 16px 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+      opacity: 1;
+
+      &:hover {
+        background-color: $primary;
+        color: white;
+      }
     }
   }
 }
