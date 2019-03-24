@@ -7,6 +7,17 @@
   position: relative;
 }
 
+.product-box {
+  position: relative;
+}
+
+.galleryitem {
+  height: 538px;
+}
+.gallery-inner {
+  height: 538px;
+}
+
 .content-gallery {
   background-color: white;
   width: 240px;
@@ -68,7 +79,69 @@
     vertical-align: middle;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    
+
+      .price {
+        font-size:20px;
+      }
+      .price2 {
+        font-size: 18px;
+      }
   }
+
+  
+  photo-1 {
+    background-image: url("../images/furniture/photo-1.jpeg");
+  }
+
+  photo-2 {
+    background-image: url("../images/furniture/photo-2.jpeg");
+  }
+
+  photo-3 {
+    background-image: url("../images/furniture/photo-3.jpeg");
+  }
+
+  photo-4 {
+    background-image: url("../images/furniture/photo-4.jpeg");
+  }
+
+  photo-5 {
+    background-image: url("../images/furniture/photo-5.png");
+  }
+
+  photo-6 {
+    background-image: url("../images/furniture/photo-6.jpeg");
+  }
+
+  photo-7 {
+    background-image: url("../images/furniture/photo-7.jpeg");
+  }
+
+  photo-8 {
+    background-image: url("../images/furniture/photo-8.jpeg");
+  }
+/*Galllery Sl*/
+#Gallery .list-inline {
+    white-space:nowrap;
+    overflow-x:auto;
+}
+
+#Gallery .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+}
+
+#Gallery .carousel-indicators > li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+}
+
+#Gallery .carousel-indicators > li.active img {
+    opacity: 0.7;
 }
 
 /*Right img*/
