@@ -1,6 +1,10 @@
 .post-box {
   margin-bottom: 2rem;
 
+  a {
+    text-decoration: none;
+  }
+
   .cover {
     padding: 70% 25px 0 25px;
 
@@ -61,21 +65,32 @@
     }
 
     .more {
-      @extend %animation;
+      @extend %animation !optional;
       text-align: center;
       padding-top: 30px;
+      border: none;
     }
   }
 }
 .post-box:hover,
 .post-info:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  text-decoration: none;
 
   h5 {
     color: $primary;
+    text-decoration: none;
   }
 
   .btn-main {
     background-color: $primary;
+    border: none;
   }
+}
+
+a:hover {
+  text-decoration: none;
 }
