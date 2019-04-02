@@ -7,6 +7,7 @@
     .price .btn-main-small {
       background-color: $primary;
     }
+
     .photo .buttons {
       visibility: visible;
     }
@@ -166,5 +167,15 @@
       color: $inactive-color;
       text-decoration: line-through $text-color;
     }
+  }
+}
+
+.product-dots {
+  .carousel-dots {
+    cursor: pointer;
+  }
+
+  .tns-nav-active .carousel-dots {
+    background-color: $primary;
   }
 }
