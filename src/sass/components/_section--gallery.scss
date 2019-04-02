@@ -1,5 +1,9 @@
 /* Tabbed Carousel*/
+
 #Gallery {
+  height: 600px;
+}
+.galleryinner {
   height: 700px;
 }
 
@@ -7,15 +11,64 @@
   position: relative;
 }
 
-.product-box {
+.product-height {
   position: relative;
+  height: 538px;
 }
 
-.galleryitem {
-  height: 538px;
+.list-inline {
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow: hidden;
+  display: inline-block;
 }
-.gallery-inner {
-  height: 538px;
+
+.listbox {
+  position: relative;
+  height: 120px;
+  width: 500px;
+  margin-left: 20px;
+  margin-right: -30px;
+}
+
+.gallerycontrols {
+  position: relative;
+  display: flex;
+  bottom: 20px;
+  a {
+    left: 520px;
+    height: 100px;
+  }
+  .fa-chevron-right,
+  .right,
+  .rightarrow {
+    padding-right: 300px;
+    position: relative;
+  }
+}
+
+.list-inline-item {
+  width: 80px;
+  height: 80px;
+  bottom: -20px;
+}
+.listbox li {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  text-indent: unset;
+}
+.selected,
+.listbox li a {
+  bottom: 50px;
+}
+
+.listbox li a img,
+.selected {
+  width: 80px;
+  height: 80px;
 }
 
 .content-gallery {
@@ -119,111 +172,82 @@
   photo-8 {
     background-image: url("../images/furniture/photo-8.jpeg");
   }
-  /*Galllery Sl*/
-  #Gallery .list-inline {
-    white-space: nowrap;
-    overflow-x: auto;
-  }
+}
 
-  #Gallery .carousel-indicators {
-    left: initial;
-    width: initial;
-    margin-left: initial;
-  }
+/*Right img*/
 
-  .carousel-indicators {
-    display: inline-block;
-    height: 162px;
+.justphoto {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_960_720.jpg");
+  background: {
+    color: transparent;
+    position: center;
+    repeat: no-repeat;
   }
-  .img-fluid {
-    height: 100px;
-    width: 100px;
-  }
-  #Gallery .carousel-indicators > li {
-    width: initial;
-    height: initial;
-    text-indent: initial;
-  }
+  position: relative;
+  display: inline-block;
+  align-items: flex-end;
+  z-index: -1;
+  width: 532px;
+  height: 700px;
+}
 
-  #Gallery .carousel-indicators > li.active img {
-    opacity: 0.7;
-  }
+.additive {
+  position: absolute;
+  bottom: 500px;
+  padding: 50px;
 
-  /*Right img*/
-
-  .justphoto {
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/30/08/48/bedroom-1872196_960_720.jpg");
-    background: {
-      color: transparent;
-      position: center;
-      repeat: no-repeat;
-    }
+  .phototext {
     position: relative;
     display: inline-block;
-    align-items: flex-end;
-    z-index: -1;
-    width: 532px;
-    height: 700px;
-  }
 
-  .additive {
-    position: absolute;
-    bottom: 500px;
-    padding: 50px;
-
-    .phototext {
-      position: relative;
-      display: inline-block;
-
-      .title-black {
-        font-weight: 300;
-        font-size: 1rem;
-        line-height: 1.2;
-        letter-spacing: 5px;
-        text-align: left;
-        margin-bottom: 3px;
-        text-transform: uppercase;
-        color: black;
-      }
-      .title-green {
-        font-weight: 600;
-        margin-bottom: 0;
-        font-size: 3rem;
-        line-height: 1.2;
-        color: #66db4e;
-      }
-      .title-orange {
-        font-weight: 600;
-        margin-bottom: 0;
-        font-size: 3rem;
-        line-height: 1.2;
-        color: $primary;
-      }
+    .title-black {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.2;
+      letter-spacing: 5px;
+      text-align: left;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      color: black;
+    }
+    .title-green {
+      font-weight: 600;
+      margin-bottom: 0;
+      font-size: 3rem;
+      line-height: 1.2;
+      color: #66db4e;
+    }
+    .title-orange {
+      font-weight: 600;
+      margin-bottom: 0;
+      font-size: 3rem;
+      line-height: 1.2;
+      color: $primary;
     }
   }
+}
 
-  .greenbutton {
-    padding-left: 70px;
-    padding-top: 50px;
+.greenbutton {
+  padding-left: 70px;
+  padding-top: 50px;
 
-    .btngreen {
-      position: relative;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      background-color: #66db4e;
+  .btngreen {
+    position: relative;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #66db4e;
+    color: white;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 1;
+
+    &:hover {
+      background-color: $primary;
       color: white;
-      font-size: 16px;
-      padding: 16px 30px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      text-align: center;
-      opacity: 1;
-
-      &:hover {
-        background-color: $primary;
-        color: white;
-      }
     }
   }
 }
