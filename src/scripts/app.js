@@ -1,3 +1,5 @@
+
+
 /* TINY SLIDER - NEW FURNITURE */
 var productSlider = tns({
   container: '.product-container',
@@ -93,3 +95,4 @@ var feedbackSlider = tns({
   controlsText: false,
   navContainer: '.feedback-dots'
 });
+
