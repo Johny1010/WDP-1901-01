@@ -235,22 +235,21 @@ header {
           color: #ffffff;
           border-color: $primary;
 
-        input {
-          border: 0;
-          padding: 0px 45px 0px 10px;
-          font-size: 14px;
-          outline: none;
+          input {
+            border: 0;
+            padding: 0px 45px 0px 10px;
+            font-size: 14px;
+            outline: none;
 
-          &::placeholder {
-            color: #bcbcbc;
+            &::placeholder {
+              color: #bcbcbc;
+            }
           }
-
         }
       }
       ul ul li {
         display: block;
       }
-
 
       ul li ul {
         display: none;
@@ -277,15 +276,15 @@ header {
         &::placeholder {
           color: $text-color;
 
-        button {
-          border: 0;
-          background-color: transparent;
-          outline: none;
+          button {
+            border: 0;
+            background-color: transparent;
+            outline: none;
 
-          &:hover {
-            cursor: pointer;
+            &:hover {
+              cursor: pointer;
+            }
           }
-
         }
       }
     }
